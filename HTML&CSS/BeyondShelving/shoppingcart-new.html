@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Welcome to Beyond Shelving</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/newPage.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<!--Header Start-->
+		<header>
+			<div class="container">
+				<div class="row cart-header">
+					<div class="col-xs-6"><a href="" class="trade" title="Beyound Shelving :: Professional Storate Solutions" alt="beyoundshelving"></a></div>
+					<div class="col-xs-6 header-height">
+						<div class="contant-details"><a href="tel:800.794.4140" style="color:#fff;" title="Call to Customer Care"><span class="mobile-hide"></span></a><a href="tel:800.794.4140" style="color:#fff;" title="Call to Customer Care">8007944140</a></div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--Header End-->
+
+				
+		<!--nav Starts-->
+		<nav class="main-nav cart-nav"></nav>
+		<!--nav Ends-->
+
+		<!--Container Start-->
+		<!--<div class="shopByIndustry visible-xs visible-sm">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Action <span class="caret"></span>
+							</button>
+							<div class="cd-filter-two dropdown-menu">
+								<form>
+									<div class="cd-filter-block">
+										<ul class="cd-filter-content cd-filters list">
+											<li><a href="#">My Profile</a></li>
+											<li><a href="#">Change Password</a></li>
+											<li><a href="#" class="active">My Orders</a></li>
+											<li><a href="#">Transaction Report</a></li>
+											<li><a href="#">Shop-To Locations</a></li>
+											<li><a href="#">Saved Caredit Cards</a></li>
+											<li><a href="#">Lists</a></li>
+											<li><a href="#">Manage Items</a></li>
+											<li><a href="#">Manage Promo Code</a></li>
+											<li><a href="#">User Management</a></li>
+											<li><a href="#">Image Selection App</a></li>
+											<li><a href="#">Customer Quick</a></li>
+										</ul>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<div class="container">
+			
+			<!--Product Categoryes Start-->
+			<div class="categoryes marg-b marg-t">
+				<!--Breadcrumb-->
+				<div class="row">
+					<div class="col-xs-12 col-md-12 shopping-cart">
+						<h1 class="sessionHeading">Your Shopping Cart</h1><br />
+						<div class="cart-details">
+							<div class="calc-shipping-tax">
+								<form class="form-inline"> 
+									<div class="form-group"> <input class="form-control" id="exampleInputName2" placeholder="Enter Zip Code"><button type="submit" class="btn btn-default org-but-default white-arrow">Calculate Shipping & Tax</button> <span class="code-info-message">Congrats, you qualified for free shipping</span></div>  
+									<div class="form-group"> <input class="form-control" id="exampleInputName2" placeholder="Enter Code"><button type="submit" class="btn btn-default org-but-default white-arrow">Apply Promo Code</button> <span class="code-info-message">Congrats, you just saved $xx.yy</span></div>  
+								</form>
+							</div>
+							<div class=" table-modal-two">
+								<!-- Table Start-->
+								 <table id="example2" class="table table-striped table-bordered" width="100%" cellspacing="0">
+							        <thead>
+							            <tr>
+							                <th>PRODUCT IMAGE</th>
+							                <th>DESCRIPTION</th>
+							                <th>QUANTITY</th>
+							                <th>LIST PRICE</th>
+							                <th>YOUR PRICE</th>
+							                <th>TOTAL PRICE</th>
+							            </tr>
+							        </thead>
+							        <tbody>
+							            <tr>
+							               <td><img src="images/img-1.png"><p><a href="#">Remove</a></p></td>
+							               <td><p class="org-text">Model Number: 14246EP</p><p>Wire Shelving Starter Unit, 14"W X 24" L X 63" H, (4) Shelves, Silver EP Series</p></td>
+							               <td>
+							               		<div class="input-group qty-group">
+											        <span class="input-group-btn">
+											            <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]"><span class="glyphicon glyphicon-minus"></span></button>
+											        </span>
+											        <input type="text" id="quantity" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+											        <span class="input-group-btn">
+											            <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]"><span class="glyphicon glyphicon-plus"></span></button>
+											        </span>
+											    </div>
+											    <!--<p><a href="">Update</a></p>-->
+											</td>
+							               <td class="text-right">$176.00</td>
+							               <td class="text-right">$88.03</td>
+							               <td class="text-right"><span class="total_price">$88.03</span></td>
+							            </tr>
+							            <tr class="totaltable-footer-tax">
+							               <td colspan="5">Subtotal</td>
+							               <td><span class="total_price">$88.03</span></td>
+							            </tr>
+							            <tr class="totaltable-tax">
+							               <td colspan="5">Shipping</td>
+							               <td><span class="total_price">$88.03</span></td>
+							            </tr>
+							            <tr class="totaltable-tax">
+							               <td colspan="5">Tax</td>
+							               <td><span class="total_price">$16.99</span></td>
+							            </tr>
+							            <tr class="totaltable-tax">
+							               <td colspan="5">Discounts</td>
+							               <td><span class="total_price">$03</span></td>
+							            </tr>
+							            <tr class="pricingTableFooter-tax">
+							               <td colspan="5">Total Order Cost</td>
+							               <td><span class="total_price">$105.02</span></td>
+							            </tr>						            
+							        </tbody>
+							    </table>
+							</div>
+						    <div class="calc-shipping-tax-but">
+								<div class="credit-cards">
+									<p> All Credit Card and PayPal Transactions will be processed by OrderZone.com </p>
+								</div>
+								<div class="card-type"><img src="images/cards-opt.png"></div>
+						    </div>
+						    <div class="shopping-button-wrap buttons-wrap">
+						    	<button class="org-bg"><i class="icon-shopping"></i> Continue shopping</button>
+						    	<button class="org-bg btn-success"><i class="icon-checkout"></i> Checkout</button> 
+						    	<div class="clear"></div>
+						    	<fieldset>
+									<legend >Or</legend>
+									<p><a href="#" class="but-paypal"><img src="images/amazonpay.jpg"></a> <a href="#" class="but-paypal"><img src="images/paypal-but.jpg"></a></p>
+								</fieldset>
+						    </div>
+						</div>
+						<br>
+					</div>
+					<!-- Table End-->
+				</div>
+			</div>
+			<!--Product Categoryes End-->
+			<!--
+			<div class="row"><div class="col-md-12 featuredItems"><div class="headingOne">Featured beyond shelving Categories </div></div></div>
+			<div class="row" style="margin-bottom: 20px;">
+				<div class="col-md-3 bdrRight">
+					<div class="headingTwo">Wire Shelving </div>
+					<ul class="itemsOne">
+						<li><a href="javascript:void(0)"></a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Starter Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Add-On Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Accessories</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)">Chrome Round Posts</a></li>
+						<li><a href="javascript:void(0)">Specialty Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)"> Black and White Shelving Units</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Liners</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Enclosures</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Home Series</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Wine Racks</a></li>
+						<li><a href="javascript:void(0)">Create Your Own Wire Shelving</a></li>
+						<li><a href="javascript:void(0)">Hardwood Shelf Inserts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 bdrRight">
+					<div class="headingTwo">Home &amp; Office Storage</div>
+					<ul class="itemsOne">
+						<li><a href="javascript:void(0)"></a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Starter Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Add-On Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Accessories</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)">Chrome Round Posts</a></li>
+						<li><a href="javascript:void(0)">Specialty Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)"> Black and White Shelving Units</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Liners</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Enclosures</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Home Series</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Wine Racks</a></li>
+						<li><a href="javascript:void(0)">Create Your Own Wire Shelving</a></li>
+						<li><a href="javascript:void(0)">Hardwood Shelf Inserts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 bdrRight">
+					<div class="headingTwo">Lockers</div>
+					<ul class="itemsOne">
+						<li><a href="javascript:void(0)"></a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Starter Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Add-On Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Accessories</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)">Chrome Round Posts</a></li>
+						<li><a href="javascript:void(0)">Specialty Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)"> Black and White Shelving Units</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Liners</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Enclosures</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Home Series</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Wine Racks</a></li>
+						<li><a href="javascript:void(0)">Create Your Own Wire Shelving</a></li>
+						<li><a href="javascript:void(0)">Hardwood Shelf Inserts</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<div class="headingTwo">Warehouse &amp; Industrial Storage</div>
+					<ul class="itemsOne">
+						<li><a href="javascript:void(0)"></a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Starter Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Add-On Units</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Accessories</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)">Chrome Round Posts</a></li>
+						<li><a href="javascript:void(0)">Specialty Chrome Wire Shelves</a></li>
+						<li><a href="javascript:void(0)"> Black and White Shelving Units</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Liners</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Enclosures</a></li>
+						<li><a href="javascript:void(0)">Wire Shelving Home Series</a></li>
+						<li><a href="javascript:void(0)">Chrome Wire Wine Racks</a></li>
+						<li><a href="javascript:void(0)">Create Your Own Wire Shelving</a></li>
+						<li><a href="javascript:void(0)">Hardwood Shelf Inserts</a></li>
+					</ul>
+				</div>  
+			</div> --> 
+		</div>
+		<!--Container End-->
+		
+
+		<!--Footer Start-->
+		<div class="containerFull">
+			<footer>
+				<!--
+				<div class="footerContent">
+					<div class="container">
+						<div class="col-md-3">
+							<div class="footerHeading">Free email offers</div>
+							<div class="deviderLine"></div>
+							<p>Your connection to what's new at BeyondShelving.</p>
+							<div class="subscribe">
+								<div class="subHeading">sign up now!</div>
+								<input type="text" name="" placeholder="Email Address"><button class="goBtn" type="button">GO</button>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="footerHeading">Customer Service</div>
+							<div class="deviderLine"></div>
+							<ul class="fMenu">
+								<li><a href="">Contact Us</a></li>
+								<li><a href="">Product Resources</a></li>
+								<li><a href="">Help/FAQ</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<div class="footerHeading">My Account</div>
+							<div class="deviderLine"></div>
+							<ul class="fMenu">
+								<li><a href="">Login / Register</a></li>
+								<li><a href="">My Account</a></li>
+								<li><a href="">Order Status</a></li>
+								<li><a href="">Order History</a></li>
+								<li><a href="">Personal Lists</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<div class="footerHeading">Company Infomation</div>
+							<div class="deviderLine"></div>
+							<ul class="fMenu">
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Terms and Conditions</a></li>
+								<li><a href="#">Return Policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="container footer-ads">
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<a href="#"><img src="images/foo-getquote.png"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<a href="#"><img src="images/foo-newcatalog.png"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<a href="#"><img src="images/foo-paypal.png"></a>
+						</div>
+						<div class="col-xs-6 col-sm-3 col-md-3">
+							<a href="#"><img src="images/foo-nexel.png"></a>
+						</div>
+					</div>
+				</div>
+			-->
+				<div class="copyRights">
+					<div class="companuInfo col-md-4">Copyrights &copy; 2017 OrderZone.com, LLC</div>
+					<div class="companuInfo2 col-md-4">Authorized Dealer for Nexel Industries</div>
+					<div class="col-md-4">
+						<ul class="socilaLinks">
+							<li><a href="javascript:void(0)"><img src="images/facebook.png"></a></li>
+							<li><a href="javascript:void(0)"><img src="images/twitter.png"></a></li>
+							<li><a href="javascript:void(0)"><img src="images/in.png"></a></li>
+							<li><a href="javascript:void(0)"><img src="images/google.png"></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+		<!--Footer End-->
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/jquery.dataTables.min.js"></script>
+		<script src="js/dataTables.bootstrap.min.js"></script>
+
+
+		
+		<script>
+		$(document).ready(function(){
+		    $('.btn-number').click(function(e){
+			    e.preventDefault();
+			    
+			    fieldName = $(this).attr('data-field');
+			    type      = $(this).attr('data-type');
+			    var input = $("input[name='"+fieldName+"']");
+			    var currentVal = parseInt(input.val());
+			    if (!isNaN(currentVal)) {
+			        if(type == 'minus') {
+			            
+			            if(currentVal > input.attr('min')) {
+			                input.val(currentVal - 1).change();
+			            } 
+			            if(parseInt(input.val()) == input.attr('min')) {
+			                $(this).attr('disabled', true);
+			            }
+
+			        } else if(type == 'plus') {
+
+			            if(currentVal < input.attr('max')) {
+			                input.val(currentVal + 1).change();
+			            }
+			            if(parseInt(input.val()) == input.attr('max')) {
+			                $(this).attr('disabled', true);
+			            }
+
+			        }
+			    } else {
+			        input.val(0);
+			    }
+			});
+
+			var price=100;
+			$("#quantity").on("change",function(){
+				quantity=$(this).val();
+				total_price=price*quantity;
+				$(".total_price").html(total_price);
+			});
+
+		 	$('#example').DataTable();
+
+			$('ul.nav li.dropdown').hover(function() {
+			  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+			}, function() {
+			  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+			});
+
+			function init() {
+				window.addEventListener('scroll', function(e){
+					var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+						shrinkOn = 100,
+						header = document.querySelector("header");
+						nav = document.querySelector(".main-nav");
+					if (distanceY > shrinkOn) {
+						classie.add(header,"smaller");
+						classie.add(nav,"smaller");
+					} else {
+						if (classie.has(header,"smaller")) {
+							classie.remove(header,"smaller");
+						};
+						if (classie.has(nav,"smaller")) {
+							classie.remove(nav,"smaller");
+						}
+					}
+				});
+			}
+			window.onload = init();
+
+
+		});
+		</script>
+		
+
+	</body>
+</html>
