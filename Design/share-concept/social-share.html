@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sticky Social Bar</title>
+	 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+body{font-family: 'Lato', sans-serif;}
+
+.side-social {
+    display: inline-block;
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    top: 30%;
+}
+#toggle-input {
+    display: none;
+}
+input[type="checkbox"] {
+    visibility: hidden;
+}
+input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+input, textarea {
+    margin-bottom: 0em;
+    position: relative;
+    padding: 0 16px;
+    max-width: 100%;
+    width: 100%;
+    height: 48px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all .25s cubic-bezier(.645,.045,.355,1);
+}
+input, textarea {
+    margin-bottom: 0;
+    position: relative;
+    padding: 0 16px;
+    max-width: 100%;
+    width: 100%;
+    height: 48px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.25s cubic-bezier(.645,.045,.355,1);
+}
+button, input, select, textarea {
+
+    font-size: inherit;
+    line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    color: inherit;
+}
+.toggle-label {
+    display: block;
+    cursor: pointer;
+    padding: 9px;
+    margin: 0 2px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #233873;
+    width: 33px;
+    border: 2px solid #fff;
+    margin-bottom: 0px;
+}
+#toggle-input:checked + .toggle-label:after {
+    content: "\f057";
+}
+.toggle-label:after {
+    content: "\f31e";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    margin: 0 auto;
+    display: table;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 20px;
+    vertical-align: middle;
+}
+#toggle-input:checked ~ .toggle-content {
+    display: block;
+}
+.toggle-content {
+    display: none;
+    -moz-transition: ease 0.3s max-height;
+    -o-transition: ease 0.3s max-height;
+    -webkit-transition: ease 0.3s max-height;
+    transition: ease 0.3s max-height;
+    list-style-type: none;
+}
+
+li, ul {
+    margin: 0;
+    padding: 0;
+}
+body .tool {
+    cursor: pointer;
+    position: relative;
+}
+.side-icon {
+    transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    color: #fff;
+    display: inline-block;
+    padding: 12px 0;
+    background-color: #233873;
+    width: 50px;
+    margin: 1px 2px;
+}
+.mt3px {
+    margin-top: 3px;
+}
+.side-social li {
+    text-align: center;
+    margin-top: 0.1em;
+}
+.tool::after {
+    right: 100%;
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+    transition: all .65s cubic-bezier(.84,-0.18,.31,1.26);
+    cursor: pointer;
+    width: max-content;
+    background: #fff;
+    border-radius: .25em;
+    bottom: 0;
+    color: #1d5387;
+    content: attr(data-tip);
+    padding: 10px;
+    margin-right: 0.1em;
+    transform: scale(1) translateY(0);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.1);
+    border: 2px solid #233873;
+}
+.side-social li a:hover {
+    color: #233873;
+    background-color: #fff;
+}
+.tool:hover:after {
+    background-color: #003c5e;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+</style>
+
+<body>
+
+
+<section class="sticky-bar">
+    <div class="side-social">
+<input type="checkbox" id="toggle-input">
+        <label class="toggle-label" for="toggle-input"> </label>   
+        <ul class="toggle-content">
+            
+            <li>
+                <a aria-label="Call Us" href="tel:+1 (987)-654-3210" class="tool side-icon mt3px call" data-tip="+1 (987)-654-3210"><i class="fas fa-phone"></i></a>
+            </li>
+            <li>
+                <a aria-label="Email" href="mailto:info@example.com" class="tool side-icon" data-tip="Email"><i class="fas fa-envelope"></i></a>
+            </li>
+            
+            <li>
+                <a aria-label="Location" href="#" class="tool side-icon" data-tip="Get Directions"><i class="fas fa-map-marker-alt"></i></a>
+            </li>
+            <li>
+                <a aria-label="Home" href="#" class="tool side-icon" data-tip="Home"><i class="fas fa-home"></i></a>
+            </li>
+            
+        </ul>
+</div>
+</section>
+
+</body>
+</html>
