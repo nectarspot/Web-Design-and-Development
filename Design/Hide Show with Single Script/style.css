@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.clear-fix::after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+
+.show-read-more .more-text{
+    display: none;
+}
+.show-more  {
+    display:none;
+}
+.services-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+.services-block .inner-box {
+    position: relative;
+    text-align: center;
+    padding: 45px 25px 0px;
+    background-color: #f5f5f552;
+    min-height: auto;
+}
+.services-block .inner-box:before {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 0px;
+    background-color: #F7FCFF;
+    transition: all 900ms ease;
+    -moz-transition: all 900ms ease;
+    -webkit-transition: all 900ms ease;
+    -ms-transition: all 900ms ease;
+    -o-transition: all 900ms ease;
+}
+.services-block .inner-box .icon-box {
+    position: relative;
+}
+.services-block .inner-box .plus-icon {
+    cursor: pointer;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 50px;
+    background-image: -ms-linear-gradient(top, #002e5b 0%, #002e5b 100%);
+    background-image: -moz-linear-gradient(top, #002e5b 0%, #002e5b 100%);
+    background-image: -o-linear-gradient(top, #002e5b 0%, #002e5b 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #002e5b), color-stop(100, #002e5b));
+    background-image: -webkit-linear-gradient(top, #002e5b 0%, #002e5b 100%);
+    background-image: linear-gradient(to bottom, #002e5b 0%, #002e5b 100%);
+    margin: 2em  auto;
+}
+.services-block .inner-box h3 {
+    position: relative;
+    color: #222222;
+    transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    font-size: 20px;
+}
+.services-block .inner-box .text {
+    position: relative;
+    color: #222222;
+    font-size: 15px;
+    line-height: 2em;
+    padding: 0px 10px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.services-block .inner-box .text p {
+    margin-bottom: 0;
+}
+.services-block .inner-box:hover::before {
+    height: 100%;
+}
+
+.services-block .inner-box:hover .text {
+    color: #222222;
+}
+.services-block .icon img {
+    width: 25%;
+    margin-bottom: 20px;
+}
