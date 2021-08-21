@@ -1,0 +1,118 @@
+/*-------------------------*/
+
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .panel-default>.panel-heading a {
+    display: block;
+    padding: 20px 5px;
+  }
+  
+  .panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    overflow:hidden;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Open Sans', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #fff;
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="true"]:after {
+    content: "\2212";
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  
+  .panel-default>.panel-heading a[aria-expanded="false"]:after {
+    content: "\002b";
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+  .panel-body{
+      padding:15px;
+  }
+  .panel-border{
+    border-bottom-style: solid;
+    border-color:var(--gold-color);
+  }
+  .panel-heading h4, .para-heading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .faq-service-list{
+    font-weight: 400;
+    color: #0f1217;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .sub-service-list{
+    font-weight: 400;
+    color: #0f1217;
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .sub-service-list li::before {
+    padding-right: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    color:var(--gold-color);
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    content: '\f058';
+    display: inline-flex;
+
+  }
+  @media (max-width: 767px) {
+    body .panel-heading h4{
+      
+      font-size: 14px;
+      
+    }
+    body .panel-body p{
+      font-size: 14px;
+    }
+    body .panel-body p{
+      padding: 10px;
+    }
+    body .panel-default>.panel-heading a:after {
+      top:5px;
+      font-weight: 700;
+      left:8px;
+    }
+    body .faq-service-list{
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 414px) and (min-width: 411px) {
+    body .panel-heading h4{
+      font-size: 15px; 
+    }
+    
+  }
+
+  .mr1{
+      margin-top:2em;
+  }
